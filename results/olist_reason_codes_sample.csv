@@ -1,0 +1,11 @@
+rank,p_repeat_90d,reason_codes
+1,0.005,price_mean=13440 (-0.29); freight_share_mean=0.016399 (-0.23); tenure_days=244 (-0.17)
+2,0.0084,price_mean=3694 (-0.30); n_orders=2 (+0.29); freight_share_mean=0.021445 (-0.26)
+3,0.0442,avg_gap_days=82 (+1.59); n_orders=2 (+0.39); n_items_mean=7.5 (+0.32)
+4,0.006,price_mean=6735 (-0.29); freight_share_mean=0.028042 (-0.24); recency_days=473 (-0.17)
+5,0.0092,price_mean=4400 (-0.27); recency_days=0 (+0.23); freight_share_mean=0.010235 (-0.20)
+6,0.006,price_mean=6499 (-0.36); freight_share_mean=0.033844 (-0.16); tenure_days=372 (-0.13)
+7,0.0092,price_mean=3930 (-0.26); recency_days=17 (+0.19); monetary_mean=3979.6 (+0.18)
+8,0.006,price_mean=5934.6 (-0.31); freight_share_mean=0.024162 (-0.20); monetary_mean=6081.5 (+0.16)
+9,0.0442,avg_gap_days=63.5 (+1.07); frequency=3 (+0.88); n_reviews=3 (+0.39)
+10,0.0092,price_mean=3690 (-0.31); freight_share_mean=0.035748 (-0.25); category_last=sports_leisure (+0.20)
