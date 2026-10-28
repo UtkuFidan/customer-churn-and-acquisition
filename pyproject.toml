@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cust-ml"
+version = "0.2.0"
+description = "Customer churn, CLV, lead scoring and uplift on Olist and Criteo data."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Utku Fidan", email = "utkufidan.17@gmail.com" }]
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.1",
+    "scikit-learn>=1.4",
+    "scipy>=1.11",
+    "xgboost>=2.0",
+    "lightgbm>=4.0",
+    "catboost>=1.2",
+    "optuna>=3.5",
+    "shap>=0.45",
+    "lifelines>=0.28",
+    "lifetimes>=0.11.3",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+validate = ["scikit-uplift>=0.5"]
+data = ["kaggle>=1.6"]
+
+[project.scripts]
+cust-ml = "cust_ml.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning", "ignore::UserWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
